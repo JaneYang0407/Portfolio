@@ -1,0 +1,221 @@
+@media screen and (min-width: 576px) and (max-width:1199px){
+	.aboutBot{
+		margin: 0 auto;
+		max-width: 800px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.aboutBot.mobile{
+		display: none !important;
+	}
+
+	.aboutPhoto
+      {
+		flex-shrink: 0;
+            width: 200px;
+            margin: 0 30px 0 0;
+      }
+}
+
+@media screen and (min-width:1200px)
+{
+      
+      header
+      {
+		transition: all .2s ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 30px;
+		padding: 0 30px;
+      }
+
+      .headerMenuBtnBox
+      {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+      }
+
+      .headerMenuBtn,.headerMenuBtn > a
+      {
+            color: #FFFFFF;
+      }
+
+	header.active .headerMenuBtn,
+	header.active .headerMenuBtn > a{
+		color: #333333;
+	}
+
+      .headerMenuBtn
+      {
+            position: relative;
+            transition: all .3s;
+            padding: 22px 0;
+            font-size: 18px;
+      }
+
+      .headerMenuBtn:not(:last-child)
+      {
+            margin: 0 40px 0 0;
+      }
+
+      .headerMenuBtn::after{
+            background: #FFFFFF;
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0px;
+            transition: all .4s ease;
+            z-index: 1;
+            border-radius: 5px;
+            height: 2px;
+            bottom: 15px;
+      }
+
+	  header.active .headerMenuBtn::after{
+		background: #333333;
+	  }
+
+      .headerMenuBtn:hover::after{
+            width: 50px;
+      }
+
+      .headerMenuList
+      {
+            box-shadow: 3px 3px 13px 3px rgba(0,0,0,.1);
+            position: absolute;
+            transition: all .3s;
+            opacity: .5;
+            display: none;
+            top: 51px;
+            right: -55px;
+            z-index: 5;
+            width: 200px;
+      }
+
+      .headerMenuBtn:hover .headerMenuList
+      {
+            opacity: 1;
+            display: block;
+      }
+
+      .headerMenuListBtn
+      {
+            background: #FFFFFF;
+            color: #00598d;            
+            text-align: center;
+            position: relative;
+            padding: 10px 15px;
+            font-size: 16px;
+      }
+
+      .headerMenuListBtn:not(:last-child)::after
+      {
+            background: rgb(58, 147, 199);
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 90%;
+            height: 1px;
+      }
+
+      .headerMenuListBtn:hover
+      {
+            filter: brightness(.9);
+      }
+
+      .headerMobileMenuBth
+      {
+            display: none;
+      }
+
+      .menuBox
+      {
+            display: none;
+      }
+
+      .Outer
+      {
+            /*padding: 74px 0 0 0;*/
+      }
+
+      .Block
+      {
+            padding: 90px 60px;
+      }
+
+      .Topic
+      {
+            font-size: 26px;
+            margin: 0 0 50px 0;
+      }
+
+      .aboutBot
+      {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+      }
+
+	  .aboutBot.mobile{
+		display: none !important;
+	}
+
+      .aboutPhoto
+      {
+            width: 200px;
+            margin: 0 30px 0 0;
+      }
+
+      .aboutCont
+      {
+            width: 490px;
+      }
+
+		.listBox
+		{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			max-width: 1000px;
+		}
+
+      .listLink
+      {                  
+            width: calc(50% - 20px);
+      }
+
+	  .listLink:hover
+		{
+			filter: brightness(.6);
+		}
+
+      .listLink:not(:nth-child(2n))
+      {
+            margin: 0 40px 60px 0;
+      }
+
+      .listTitle
+      {
+            font-size: 24px;                  
+      }
+
+	  .listLink:hover .listTitle,
+	  .listLink:hover .listItemBox{
+		opacity: .5;
+	  }
+
+      .Block.contact .listItemBox
+      {
+            margin: 0 auto;
+            width: fit-content;
+      }
+}
